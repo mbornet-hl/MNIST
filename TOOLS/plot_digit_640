@@ -1,0 +1,29 @@
+#!/usr/bin/gnuplot
+#
+#  @(#) [MB] cy_plot_heatmap_gray_640 Version 1.2 du 19/01/01 - 
+#
+
+reset
+
+set terminal pngcairo size 640,480 enhanced font 'Verdana,10'
+INPUT    = sprintf("TEXTS/%s.%s",  RADIX, "txt")
+OUTPUT   = sprintf("IMAGES/%s.%s", RADIX, "png")
+print "RADIX  = ", RADIX
+print "INPUT  = ", INPUT
+print "OUTPUT = ", OUTPUT
+set output OUTPUT
+
+set border linewidth 0
+unset key
+unset colorbox
+unset tics
+set lmargin screen 0.1
+set rmargin screen 0.9
+set tmargin screen 0.9
+set bmargin screen 0.1
+set xlabel noenhanced  OUTPUT
+# set palette grey
+set palette grey negative
+
+set pm3d map
+splot INPUT matrix
