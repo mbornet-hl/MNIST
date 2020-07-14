@@ -1,7 +1,7 @@
 # MNIST
 MNIST : data files and images
 
-The numbers of the MNIST database can be viewed with the images of this repository. Here are some exmaples :
+The numbers of the MNIST database can be viewed with the images of this repository. Here are some examples :
 
 ![Example 1](https://github.com/mbornet-hl/MNIST/blob/master/IMAGES/41/mnist_0_41003.png)
 
